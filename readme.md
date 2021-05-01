@@ -5,5 +5,5 @@ A pattern library generator
 ## Commands
 
 - `npm i`: Install
-- `build`: Run a production build
-- `watch`: Run a dev server
+- `npm run build`: Run a production build
+- `npm run watch`: Run a dev server
