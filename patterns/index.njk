@@ -1,6 +1,12 @@
 ---
 page:
-  title: "Patterns"
-  heading: "Patterns"
+  title: "All patterns"
+  heading: "All patterns"
   description: "A list of all patterns in the library"
 ---
+
+<ul>
+  {% for pattern in patterns %}
+    <li><a href="{{ pattern.id }}">{{ pattern.title }}</a></li>
+  {% endfor %}
+</ul>
