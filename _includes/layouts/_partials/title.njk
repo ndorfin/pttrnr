@@ -1,8 +1,8 @@
 <title>
   {% block title %}
-    {% if page_title %}
-      {{ page_title }} &lt;
+    {% if page.title %}
+      {{ page.title }} &lt;
     {% endif %}
-    {{ global.site_title }}
+    {{ global.site.title }}
   {% endblock %}
 </title>

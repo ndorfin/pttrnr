@@ -1,2 +1,3 @@
-lang: "en"
-site_title: "PTTRNR is here"
+site:
+  lang: "en"
+  title: "PTTRNR"
