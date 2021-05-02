@@ -2,6 +2,11 @@
 
 A pattern library generator
 
+## Dependencies
+
+- Node.js (v15.0+)
+- NPM (v7.8+)
+
 ## Commands
 
 - `npm i`: Install
