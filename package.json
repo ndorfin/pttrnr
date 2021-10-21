@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --serve"
+    "build": "npx @11ty/eleventy",
+    "build:debug": "DEBUG=Eleventy* npm run build",
+    "serve": "npx @11ty/eleventy --serve",
+    "serve:debug": "DEBUG=Eleventy* npm run serve"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "js-yaml": "^3.14.1"
+    "@11ty/eleventy": "^1.0.0-beta.2",
+    "js-yaml": "^4.1.0"
   },
   "dependencies": {
     

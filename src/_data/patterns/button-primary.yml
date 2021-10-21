@@ -1,0 +1,5 @@
+id: button-primary
+name: Button Primary
+group_id: buttons
+code: 
+  <button type="submit" class="button button_primary">Submit</button>

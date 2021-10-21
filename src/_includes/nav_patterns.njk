@@ -1,0 +1,10 @@
+{% set patternsList = patterns | objToArray %}
+<nav aria-label="List of patterns">
+  <ul>
+    {% for pattern in patternsList %}
+      <li>
+        <a href="/patterns/{{ pattern.group }}/{{ pattern.id }}/">{{ pattern.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
