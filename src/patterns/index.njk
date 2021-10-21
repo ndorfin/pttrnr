@@ -3,10 +3,7 @@ title: "All patterns"
 heading: "All patterns"
 description: "A list of all patterns in the library"
 layout: "default.njk"
+permalink: "/patterns/index.html"
 ---
 
-<ul>
-  {% for pattern in patterns %}
-    <li><a href="{{ pattern.id }}">{{ pattern.title }}</a></li>
-  {% endfor %}
-</ul>
+{% include "nav_pattern_groups.njk" %}

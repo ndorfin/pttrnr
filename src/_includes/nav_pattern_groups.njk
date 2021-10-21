@@ -1,0 +1,11 @@
+{% set patternGroupsList = pattern_groups | objToArray %}
+<nav aria-label="List of pattern groups">
+  <h3>Pattern groups</h3>
+  <ul>
+    {% for patternGroup in patternGroupsList %}
+      <li>
+        <a href="/patterns/{{ patternGroup.id }}/">{{ patternGroup.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
