@@ -4,6 +4,11 @@ A pattern library generator.
 
 This repo is a documentation, testing, and development platform for your project's front-end assets. These assets are typically stored in a separate repo, and symlinked to this repo so they can be 'dogfooded'.
 
+There are two distinct sets of assets used within this pattern library:
+
+1. those used explicitly for rendering this pattern library, and its layout.
+1. those used to render examples of each pattern in its intended way. These examples are sandboxed in `<iframe>`s.
+
 ## Dependencies
 
 - Node.js (v16.10+)
@@ -34,6 +39,13 @@ Make sure you have [the dependencies](#Dependencies) installed before proceeding
 Your new pattern should be available at the following URL:
 
 `/patterns/[GROUP_ID]/[ID]/`, e.g. `/patterns/buttons/button-primary/`
+
+## Glossary
+
+- **assets** – the front-end artefacts such as SCSS, JavaScript, images, icons, and fonts. These are typically found in a separate repo, that the pattern library consumes and uses.
+- **pattern** – A distinct block of HTML and its corresponding assets. Each pattern typically uses a `class` attribute.
+- **pattern group** – A collection of similar patterns, typically grouped by function. e.g. buttons, or lists, or…
+- **example** – The pattern library renders a pattern's *example* in an `<iframe>`. Each example uses the project's assets.
 
 ## List of shell commands
 
