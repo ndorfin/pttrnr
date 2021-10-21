@@ -1,32 +1,32 @@
--
-  name: leaf
-  description: |-
-    A pattern that has no descendents
--
-  name: root
-  description: |-
-    A pattern that has no ancestors
-- 
-  name: parent
-  description: |-
-    This pattern has one or more required child patterns
--
-  name: child
-  description: |-
-    This pattern has one or more required parent patterns
--
-  name: foster
-  description: |-
-    This pattern can be a leaf pattern, but it can also support one or more orphan patterns.
--
-  name: orphan
-  description: |-
-    This pattern can be a root pattern, but it can also support one or more foster patterns.
--
-  name: symbiote
-  description: |-
-    One or more required sibling patterns are linked to this pattern, and together they produce a new pattern.
--
-  name: sibling
-  description: |-
-    These patterns can have optional siblings
+# -
+#   name: leaf
+#   description: |-
+#     A pattern that has no descendents
+# -
+#   name: root
+#   description: |-
+#     A pattern that has no ancestors
+# - 
+#   name: parent
+#   description: |-
+#     This pattern has one or more required child patterns
+# -
+#   name: child
+#   description: |-
+#     This pattern has one or more required parent patterns
+# -
+#   name: foster
+#   description: |-
+#     This pattern can be a leaf pattern, but it can also support one or more orphan patterns.
+# -
+#   name: orphan
+#   description: |-
+#     This pattern can be a root pattern, but it can also support one or more foster patterns.
+# -
+#   name: symbiote
+#   description: |-
+#     One or more required sibling patterns are linked to this pattern, and together they produce a new pattern.
+# -
+#   name: sibling
+#   description: |-
+#     These patterns can have optional siblings
