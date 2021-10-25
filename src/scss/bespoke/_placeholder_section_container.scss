@@ -1,0 +1,11 @@
+%section_container {
+  padding: 1rem;
+
+  > *:first-child {
+    margin-block-start: 0;
+  }
+
+  > *:last-child {
+    margin-block-end: 0;
+  }
+}

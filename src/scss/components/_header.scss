@@ -1,0 +1,4 @@
+body > header {
+  background-color: $colour_chrome_background;
+  @extend %section_container;
+}

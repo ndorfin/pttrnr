@@ -22,7 +22,13 @@ Make sure you have [the dependencies](#Dependencies) installed before proceeding
 
 ## Development
 
-1. `npm run serve`
+The dev server can be started uisng `npm start`.
+
+While the dev server is running you get:
+
+- Sass compilation and watching (including in the assets folder)
+- BrowserSync
+- Eleventy monitoring for file changes
 
 ## Adding patterns
 
@@ -49,8 +55,7 @@ Your new pattern should be available at the following URL:
 
 ## List of shell commands
 
-- `npm i`: Install
-- `npm run build`: Run a production build
-- `npm run build:debug`: Run a production build in DEBUG mode
-- `npm run serve`: Run a dev server
-- `npm run serve:debug`: Run a dev server in DEBUG mode
+- `npm i` – Install dependencies
+- `npm start` – Run Sass, a BrowserSync server, and watch for file changes, useful for DEVELOPMENT
+- `npm run build` – Static build to the `dist` folder
+- `npm run postbuild` – Run Autoprefixer and CSS Nano on the output CSS

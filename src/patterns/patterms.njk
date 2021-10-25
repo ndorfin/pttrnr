@@ -7,5 +7,35 @@ pagination:
 permalink: "/patterns/{{ pattern.group_id }}/{{ pattern.id }}/index.html"
 layout: "patterns.njk"
 ---
+{% if pattern.example %}
+  <section id="section_example">
+    <header>
+      <h3>Example</h3>
+    </header>
+    <iframe src="example/"></iframe>
+  </section>
+  {% if pattern.example.code %}
+    <section id="section_code">
+      <header>
+        <h3>Code</h3>
+      </header>
+      {# Keep this on one line to avoid unnecessary whitespace #}
+      <pre><code>{{ pattern.example.code | escape }}</code></pre>
+    </section>
+  {% endif %}
+{% endif %}
 
-<iframe src="example/"></iframe>
+{% if pattern.notes %}
+  <section id="section_code">
+    <header>
+      <h3>Notes</h3>
+    </header>
+    <ul>
+      {% for note in pattern.notes %}
+        <li>
+          {{ note | markdown | safe }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}

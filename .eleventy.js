@@ -1,8 +1,18 @@
 const yaml = require('js-yaml');
+const markdownIt = require("markdown-it");
+
+const md = new markdownIt({
+  html: true,
+});
 
 module.exports = function(config) {
   
-  config.addNunjucksFilter('objToArray', data => {
+  config.addFilter("markdown", (content) => {
+    // Adds markdown support to any field
+    // e.g. {{ pattern.description | markdown | safe }}
+    return md.render(content);
+  });
+  config.addFilter('objToArray', data => {
     // When using multiple files in the `data` directory
     // 11ty appends them as key/value pairs to an object.
     // This filter is useful for turning that object into an array,
@@ -23,4 +33,4 @@ module.exports = function(config) {
       layouts: 'src/_layouts',
     }
   }
-};
+}

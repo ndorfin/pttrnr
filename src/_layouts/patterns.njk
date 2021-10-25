@@ -2,5 +2,5 @@
 {% set page = {
   title: pattern.name,
   heading: pattern.name,
-  description: pattern.description
+  description: pattern.description | markdown | safe
 } %}

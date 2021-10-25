@@ -1,0 +1,4 @@
+body > main {
+  background-color: #fff;
+  @extend %section_container;
+}

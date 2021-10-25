@@ -1,0 +1,21 @@
+body > nav {
+  background-color: $colour_chrome_background;
+  @extend %section_container;
+  padding-block-start: 0;
+
+  h2 {
+    @include screen_reader_only;
+  }
+
+  ul {
+    @include nav_list;
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    & + li {
+      margin-inline-start: 1rem;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@mixin nav_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  > li:before {
+    content: "\200B";
+    @include screen_reader_only;
+  }
+}
