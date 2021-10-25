@@ -13,6 +13,8 @@ features:
   animations: true
 ancestors:
   - group/pattern_name
+optional_ancestors:
+  - group/pattern_name
 descendents:
   - group/pattern_name
 optional_descendents:
