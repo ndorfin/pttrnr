@@ -1,0 +1,35 @@
+id: 
+name: 
+description: |-
+  …
+# synonyms: []
+group_id: 
+# order: 
+# features:
+#   custom_props: true
+#   abstract_classes: true
+#   focus_styling: true
+#   progressive_enhancement: true
+#   animations: true
+# ancestors:
+#   - group/pattern_name
+# descendents:
+#   - group/pattern_name
+# optional_descendents:
+#   - group/pattern_name
+# pairings:
+#   - group/pattern_name
+example:
+  # min_height: 50 # Default
+  # container: main # main | header | footer | dialog
+  code: |-
+    …
+notes:
+  - …
+source:
+  js:
+    - 
+  scss:
+    - 
+  img:
+    - 

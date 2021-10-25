@@ -1,0 +1,13 @@
+id: button-primary
+name: Button Primary
+description: |-
+  The most important button in a form, or within a page context.
+group_id: buttons
+example:
+  code: |-
+    <button type="submit" class="button button_primary">Submit</button>
+notes:
+  - …
+source:
+  scss:
+    - _buttons

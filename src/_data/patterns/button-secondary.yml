@@ -1,0 +1,13 @@
+id: button-secondary
+name: Button Secondary
+description: |-
+  The second-most important button in a form, or a page context.
+group_id: buttons
+example:
+  code: |-
+    <button type="submit" class="button button_secondary">Submit</button>
+notes:
+  - …
+source:
+  scss:
+    - _buttons

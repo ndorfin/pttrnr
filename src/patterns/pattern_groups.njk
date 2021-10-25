@@ -1,0 +1,12 @@
+---
+pagination:
+  data: pattern_groups
+  size: 1
+  alias: pattern_group
+  resolve: values
+permalink: "/patterns/{{ pattern_group.id }}/index.html"
+layout: "pattern_groups.njk"
+---
+
+{% include "nav_patterns.njk" %}
+
