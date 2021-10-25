@@ -12,7 +12,7 @@ There are two distinct sets of assets used within this pattern library:
 ## Dependencies
 
 - Node.js (v16.10+)
-- NPM (v7.24+)
+- NPM (v8.1+)
 
 ## Installation
 
