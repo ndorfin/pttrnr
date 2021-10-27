@@ -30,12 +30,6 @@ layout: "patterns.njk"
     <header>
       <h3>Notes</h3>
     </header>
-    <ul>
-      {% for note in pattern.notes %}
-        <li>
-          {{ note | markdown | safe }}
-        </li>
-      {% endfor %}
-    </ul>
+    {{ pattern.notes | markdown | safe }}
   </section>
 {% endif %}
