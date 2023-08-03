@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass  --no-source-map --watch src/scss:dist/css",
+    "watch:sass": "sass  --no-source-map --watch src/assets/scss:dist/assets/css",
     "watch:eleventy": "eleventy --serve",
-    "build:sass": "sass  --no-source-map src/scss:dist/css",
+    "build:sass": "sass  --no-source-map src/assets/scss:dist/assets/css",
     "build:eleventy": "eleventy",
-    "postbuild": "postcss dist/css/*.css -u autoprefixer cssnano -r --no-map",
+    "postbuild": "postcss dist/assets/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy"
   },
