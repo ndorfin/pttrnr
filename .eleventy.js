@@ -1,5 +1,5 @@
 const yaml = require('js-yaml');
-const markdownIt = require("markdown-it");
+const markdownIt = require('markdown-it');
 
 const md = new markdownIt({
   html: true,
@@ -7,7 +7,7 @@ const md = new markdownIt({
 
 module.exports = function(config) {
   
-  config.addFilter("markdown", (content) => {
+  config.addFilter('markdown', (content) => {
     // Adds markdown support to any field
     // e.g. {{ pattern.description | markdown | safe }}
     return md.render(content);
