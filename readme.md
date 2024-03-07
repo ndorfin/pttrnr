@@ -24,12 +24,6 @@ Make sure you have [the dependencies](#Dependencies) installed before proceeding
 
 The dev server can be started uisng `npm start`.
 
-While the dev server is running you get:
-
-- Sass compilation and watching (including in the assets folder)
-- BrowserSync
-- Eleventy monitoring for file changes
-
 ## Adding patterns
 
 1. Add a `.yml` file to `src/_data/patterns`, using the `pattern_model.yml` as a reference.
@@ -48,7 +42,7 @@ Your new pattern should be available at the following URL:
 
 ## Glossary
 
-- **assets** – the front-end artefacts such as SCSS, JavaScript, images, icons, and fonts. These are typically found in a separate repo, that the pattern library consumes and uses.
+- **assets** – the front-end artefacts such as CSS, JavaScript, images, icons, and fonts. These are typically found in a separate repo, that the pattern library consumes and uses.
 - **pattern** – A distinct block of HTML and its corresponding assets. Each pattern typically uses a `class` attribute.
 - **pattern group** – A collection of similar patterns, typically grouped by function. e.g. buttons, or lists, or…
 - **example** – The pattern library renders a pattern's *example* in an `<iframe>`. Each example uses the project's assets.
@@ -56,6 +50,5 @@ Your new pattern should be available at the following URL:
 ## List of shell commands
 
 - `npm i` – Install dependencies
-- `npm start` – Run Sass, a BrowserSync server, and watch for file changes, useful for DEVELOPMENT
+- `npm start` – Run pttrnr in dev mode
 - `npm run build` – Static build to the `dist` folder
-- `npm run postbuild` – Run Autoprefixer and CSS Nano on the output CSS
